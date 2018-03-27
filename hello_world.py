@@ -12,7 +12,7 @@ HTML = """
         <title>HelloWorldWebApp</title>
     </head>
     <body>
-        Vijay Python Flask Hello World App.
+        <h1>Vijay Python Flask Hello World App.</h1>
     </body>
     </html>
 """
