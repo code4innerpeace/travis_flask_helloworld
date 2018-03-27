@@ -17,10 +17,14 @@ HTML = """
     </html>
 """
 
-app = Flask(__name__)
+app = Flask(__name__) # pylint: disable=invalid-name
 
 @app.route("/")
 def hello_world():
+    """
+    Returns simple HTML page.
+    :return: HTML
+    """
     return HTML
 
 if __name__ == "__main__":
