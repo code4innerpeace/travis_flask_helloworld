@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - pip install -r requirements/dev.txt
+      - pip install codecov
+  build:
+    commands:
+      - python -m unittest discover
+      - coverage erase
+      - coverage run test_hello_world.py && coverage html
+      - pylint --output-format=text hello_world.py
+  post_build:
+    commands:
+      - codecov
+      - echo "Nothing for post build"
+
