@@ -13,5 +13,6 @@ phases:
   post_build:
     commands:
       - codecov
-      - echo "Nothing for post build"
+      - echo "Created python package using pyinstaller."
+      - pyinstaller --onefile hello_world.py 
 
