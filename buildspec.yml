@@ -4,6 +4,7 @@ phases:
     commands:
       - pip install -r requirements/dev.txt
       - pip install codecov
+      - pip install pyinstaller
   build:
     commands:
       - python -m unittest discover
